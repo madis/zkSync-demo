@@ -1,0 +1,29 @@
+{
+  "type": "contract",
+  "storages": {
+    "0x0000000000000000000000000000000000000000": [
+      "0x0",
+      [],
+      "0"
+    ]
+  },
+  "msg": {
+    "sender": "0x74af123ef7013e821733259f2a01558a4fabf26b",
+    "recipient": "0xbaf52e3e7bfec76d3a9cadf88f097ae9f89c8072",
+    "token_address": "0x0000000000000000000000000000000000000000",
+    "amount": "0"
+  },
+  "arguments": {
+    "new": {
+    },
+    "raiseInvoice": {
+      "invoiceId": "1",
+      "amount": "100000000000000000",
+      "issuer": "0x74AF123Ef7013E821733259F2a01558A4FABf26B",
+      "payer": "0xC238fa6CcC9D226e2C49644b36914611319fc3Ff"
+    },
+    "getInvoice": {
+       "invoiceId": "1"
+    }
+  }
+}

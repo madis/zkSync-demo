@@ -1,0 +1,4 @@
+contracts/invoices/private_key
+contracts/invoices/data/proving_key
+contracts/invoices/data/verifying_key
+contracts/invoices/target
