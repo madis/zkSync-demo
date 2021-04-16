@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>zkSync demo</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+  <% if defined? message %>
+    <h3>Command output:</h3>
+    <code><%= message %></code>
+  <% end %>
+
+  <h3>Raise new invoice:</h3>
+  <form method="POST" action="/invoices">
+    <label for="invoice_id">Id</label>
+    <input type="text" id="invoice_id" name="invoice_id" />
+
+    <label for="amount">Amount</label>
+    <input type="text" id="amount" name="amount" />
+
+    <button id="create_invoice">Create invoice</button>
+  </form>
+
+
+  <h3>Query created invoice:</h3>
+  <form method="GET" action="/invoices/query">
+    <label for="invoice_id">Id</label>
+    <input type="text" id="invoice_id" name="invoice_id" />
+
+    <button id="query">Query invoice</button>
+  </form>
+  <script src="js/application.js"></script>
+</body>
+</html>

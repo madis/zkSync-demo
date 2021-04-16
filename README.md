@@ -9,7 +9,20 @@ An application demonstrating the use of [zkSync](https://zksync.io/) technology 
 The tools (`zargo`, `znc` and `zvm`) can be downloaded from https://github.com/matter-labs/zinc/releases
 The Zinc language description can be found at https://zinc.zksync.io/
 
-### Step by step
+### Demo app (Ruby)
+
+A simple Sinatra app to call the contract methods is provided.
+Due to lack of JS API, a workaround using `zargo` calls by the back-end is provided.
+
+> Pre-requisite: have some recent version of Ruby installed
+
+1. Install dependencies under `app-ruby`: `bundle install`
+2. Start the app `./start`
+3. Try it in http://localhost:3999
+
+![10 image layout](docs/app-ruby-ui.png)
+
+### Command line
 
 1. Create new Zinc smart contract project with `zargo new --type contract invoices`
 2. Edit the logic (language reference https://zinc.zksync.io/)
